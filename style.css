@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background:black;
+    color:white;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.hero h1 {
+    font-size: 50px;
+    width: 60%;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.services {
+    padding: 60px 40px;
+    text-align: center;
+    background: white;
+}
+
+.service-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.about {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact {
+    padding: 60px 40px;
+    background: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#formMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .hero h1 {
+        width: 100%;
+        font-size: 34px;
+    }
+
+    .service-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
